@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stored control times</title>
+</head>
+<body>
+  <h1>Stored control times</h1>
+  {% if items %}
+  <table>
+    <tr>
+      <th>Miles</th>
+      <th>Km</th>
+      <th>Location</th>
+      <th>Open</th>
+      <th>Close</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+      <td>{{ item.miles }}</td>
+      <td>{{ item.km }}</td>
+      <td>{{ item.location }}</td>
+      <td>{{ item.open }}</td>
+      <td>{{ item.close }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p>No control times stored.</p>
+  {% endif %}
+  <p><a href="/">Back</a></p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# macOS / OS files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Course submission credentials
+credentials.ini
